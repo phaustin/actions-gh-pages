@@ -16,6 +16,9 @@ concurrency:
 jobs:
   test:
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
+      packages: write
     strategy:
       matrix:
         os:
